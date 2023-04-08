@@ -1,6 +1,6 @@
 ﻿# include <stdio.h>
 
-//함수 정의 (10진법 제외)
+//함수 정의 
 
 void cal(unsigned int n,int k) {//10진수를 k진수로 나누는 함수 이름을 cal로 정하고, 맨앞이 0일수도 있기 때문에 unsigned int을 써줌.
 	//모두 정수형으로 입력 받기 때문에 (unsigned) int로 선언한다.
@@ -15,6 +15,8 @@ void cal(unsigned int n,int k) {//10진수를 k진수로 나누는 함수 이름
 	}
 }
 
+
+//main 함수
 
 int main(void) {
 	int n, k;//변환할 진법 방법(수)과 변환할 10진수를 정수형으로 입력 받기 위해 변수 선언
