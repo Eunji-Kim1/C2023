@@ -94,17 +94,13 @@ void min2(void) {
 int prime1(int num) {
 	//1과 자기 자신만을 약수로 갖는 수를 소수라고 한다. 
 
-	char true, false; //true, false로 반환해야 하기 때문에 변수를 선언해준다.
-	true = 1; //true의 값을 1로 초기화해준다. 
-	false = 0; //false의 값을 0으로 초기화해준다.
-
 	for (int i = 2; i < num; i++) {
 		//2부터 자기자신보다 1작은 수까지 나눴을 때 하나라도 나눠지면 소수가 아니다.
 		//따라서 2부터 (i < 자기자신)까지 반복문을 통해 나눠지고 나누어떨어지는 경우가 있으면
 
-		if (num % i == 0) return false; //false를 반환한다.
+		if (num % i == 0) return 0; //false를 반환한다.
 
-		else return true; //아무것도 나누어떨어지지 않으면 true를 반환한다. 
+		else return 1; //아무것도 나누어떨어지지 않으면 true를 반환한다. 
 	}
 }
 
